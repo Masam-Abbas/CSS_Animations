@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations And keyframes</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background: lightcoral;
+            /* background: gray; */
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+           
+        }
+
+        .box {
+            position: absolute;
+            width: 20%;
+            height: auto;
+            background-color: aquamarine;
+            display: inline-block;
+            padding: 10px;
+            /* animation: masam1; */
+           animation: masam2;
+            animation-duration: 3s; 
+            /* animation-delay: 2s; */
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse; */
+            animation-timing-function: ease-in;
+        }
+        .box h1{
+            background: transparent;
+            overflow: hidden;
+        }
+
+        /* @keyframes masam1 {
+            from {
+                height: 8rem;
+                width: 10rem;
+            }
+
+            to {
+                height: 20rem;
+                width: 30rem;
+            }
+        } */
+
+
+        @keyframes masam2 {
+            0% {
+                top: 0rem;
+                left: 0rem;
+            }
+
+            25% {
+                top: 18rem;
+                left: 0rem;
+            }
+
+            50% {
+                top: 18rem;
+                left: 80%;
+
+            }
+
+            75% {
+                top: 0rem;
+                left: 80%;
+            }
+
+            100% {
+                top: 0rem;
+                left: 0rem;
+
+            }}
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="box">
+            <h1>This is animation</h1>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
